@@ -1,0 +1,148 @@
+.se-api-card {
+  display: flex;
+  padding: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 20px;
+  border: 1px solid var(--main-colors-blue, #123af8);
+  background: var(--main-colors-grey-3, #f6f8fc);
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: var(--Desktop-L-V4, 16px);
+    align-self: stretch;
+  }
+
+  h2.se-api-card__title {
+    color: var(--main-colors-black, #101423);
+    font-family: "TT Fors", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 128%;
+    letter-spacing: -0.24px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  &__badge {
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: var(--accent-colors-pale-cyan, #d8f7ff);
+    color: var(--main-colors-black-2, #252e3d);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 140%;
+
+    code {
+      color: var(--main-colors-black-2, #252e3d);
+      font-family: "TT Fors", sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+    }
+  }
+
+  p.se-api-card__subtitle {
+    color: var(--main-colors-black-2, #252e3d);
+    font-family: "TT Fors", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    padding-bottom: 32px;
+  }
+
+  &__rows {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__row-label {
+    color: var(--main-colors-black-2, #252e3d);
+    font-family: "TT Fors", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+  }
+
+  &__row-value {
+    code {
+      display: flex;
+      padding: 8px 16px;
+      align-items: center;
+      gap: 8px;
+      border-radius: 8px;
+      background: var(--main-colors-grey-2, #ecf1f9);
+      color: var(--main-colors-black-2, #252e3d);
+      font-family: "TT Fors", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 140%;
+    }
+  }
+
+  &__note {
+    color: var(--main-colors-dark-grey, #717e95);
+    font-family: "TT Fors", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  &__links-intro {
+    margin-top: 16px;
+    color: #6b7280;
+    font-size: 12px;
+  }
+
+  &__cta-wrap {
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+  }
+
+  &__help {
+    color: #6b7280;
+    font-size: 12px;
+    margin-top: 8px;
+  }
+
+  .se-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 14px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none
+  }
+
+  .se-btn--primary {
+    background: #2563eb;
+    color: #fff;
+  }
+
+  .se-btn--secondary {
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    color: #0f172a;
+  }
+}
+
+.is-selected .se-api-card {
+  outline: 2px solid rgba(37, 99, 235, .15);
+}

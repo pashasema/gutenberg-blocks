@@ -1,0 +1,80 @@
+{
+    "apiVersion" : 3,
+    "name" : "se/api-disclaimer-banner",
+    "title" : "SE: API Disclaimer Banner",
+    "category" : "widgets",
+    "icon" : "admin-site",
+    "description" : "Disclaimer banner for API",
+    "supports" : {
+        "anchor" : true,
+        "align" : [
+            "wide",
+            "full"
+        ]
+    },
+    
+    "editorScript": "file:./index.js",
+    "viewStyle": "file:./style-frontend.css",
+    "editorStyle": "file:./editor.css",
+    
+    "render": "file:./render.php",
+    
+    "attributes" : {
+        "title" : {
+            "type" : "string",
+            "default" : "You are reading the Data API docs"
+        },
+        "baseUrlLabel" : {
+            "type" : "string",
+            "default" : "Base URL:"
+        },
+        "baseUrl" : {
+            "type" : "string",
+            "default" : "api.seranking.com"
+        },
+        "subtitle" : {
+            "type" : "string",
+            "default" : "Data API and Project API keys are not interchangeable — use the correct one to avoid authentication errors."
+        },
+        "dataApiKeyLabel" : {
+            "type" : "string",
+            "default" : "Data apikey example:"
+        },
+        "dataApiKey" : {
+            "type" : "string",
+            "default" : "80cfee7d-xxxx-xxxx-xxxx-fc8500816bb3"
+        },
+        "dataApiKeyNote" : {
+            "type" : "string",
+            "default" : "(UUID format)"
+        },
+        "projectApiKeyLabel" : {
+            "type" : "string",
+            "default" : "Project apikey example:"
+        },
+        "projectApiKey" : {
+            "type" : "string",
+            "default" : "253a73adxxxxxxxxxxxxxx340aa0a939"
+        },
+        "projectApiKeyNote" : {
+            "type" : "string",
+            "default" : "(40-char hex)"
+        },
+        "BtnLabel" : {
+            "type" : "string",
+            "default" : "API dashboard"
+        },
+        "BtnUrl" : {
+            "type" : "string",
+            "default" : "https://online.seranking.com/admin.dashboard.html"
+        },
+        "helpText" : {
+            "type" : "string",
+            "default": "API keys are available in your account. For any questions or 401 errors, email {email} for support."
+        },
+        "helpEmail" : {
+            "type" : "string",
+            "default" : "api@seranking.com"
+        }
+    }
+}
